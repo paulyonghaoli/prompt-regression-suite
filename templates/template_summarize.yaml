@@ -1,0 +1,9 @@
+id: summarize_v1
+template: |
+  Summarize the following text in 2-3 sentences.
+  
+  Text: {text}
+contract:
+  must_not_contain: []
+  must_start_with: "Summary:"
+  max_length_tokens: 100

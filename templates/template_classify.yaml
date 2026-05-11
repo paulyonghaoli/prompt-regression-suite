@@ -1,0 +1,8 @@
+id: classify_v1
+template: |
+  Classify the sentiment of the following text as positive, negative, or neutral.
+  
+  Text: {text}
+contract:
+  must_be_one_of: ["positive", "negative", "neutral"]
+  max_length_tokens: 10

@@ -1,0 +1,14 @@
+[project]
+name = "prompt-regression-suite"
+version = "0.1.0"
+description = "A framework for treating prompt templates as versioned, testable artifacts with regression coverage, consistency scoring, and failure detection across input variations."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "click==8.1.7",
+    "pyyaml==6.0.1",
+    "nltk==3.8.1",
+    "sentence-transformers==2.7.0",
+    "openai==1.35.0",
+    "pytest==8.2.0",
+]

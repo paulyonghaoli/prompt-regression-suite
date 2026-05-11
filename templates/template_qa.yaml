@@ -1,0 +1,11 @@
+id: qa_v1
+template: |
+  Answer the question based only on the context below. If the answer is not in the context, say "I don't know."
+  
+  Context: {context}
+  Question: {question}
+contract:
+  must_not_contain: ["I think", "probably", "maybe", "I believe"]
+  must_use_context: true
+  max_length_tokens: 150
+  refusal_trigger: "I don't know"  # expected when context is irrelevant
